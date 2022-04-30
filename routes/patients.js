@@ -21,7 +21,6 @@ router.post("/", async (req, res) => {
       "bloodType",
       "height",
       "weight",
-      "bmi",
     ])
   );
 

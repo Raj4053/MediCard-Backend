@@ -1,3 +1,4 @@
 {
-    "jwtPrivateKey": "mediCard_jwtPrivateKey"
+    "jwtPrivateKey": "mediCard_jwtPrivateKey",
+    "db": "mediCard_db"
 }

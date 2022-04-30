@@ -49,14 +49,13 @@ function validatePatient(patient) {
         //Personal Data
         name: Joi.string().min(3).max(20).required(), 
         dob: Joi.date().required(),
-        sex: Joi.string().length(1).required(),
+        sex: Joi.string().required(),
         phone: Joi.string().length(10).required(),
 
         //Genral Data
-        bloodType: Joi.string().min(2).max(3).required(),
+        bloodType: Joi.string().required(),
         height: Joi.number().required(),
         weight: Joi.number().required(),
-        bmi: Joi.number().required() 
     });
 
     return schema.validate(patient);
