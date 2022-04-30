@@ -37,10 +37,6 @@ const Patient = mongoose.model('Patient', new mongoose.Schema({
     weight: {
         type: Number,
         required: true
-    },
-    bmi: {
-        type: Number,
-        required: true
     }
 }));
 
