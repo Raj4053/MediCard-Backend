@@ -24,7 +24,7 @@ const Patient = mongoose.model('Patient', new mongoose.Schema({
     },
 
     //Genral Data
-    bloodType: {
+    bloodGroup: {
         type: String,
         required: true,
         minlength: 2,
@@ -49,7 +49,7 @@ function validatePatient(patient) {
         phone: Joi.string().length(10).required(),
 
         //Genral Data
-        bloodType: Joi.string().required(),
+        bloodGroup: Joi.string().required(),
         height: Joi.number().required(),
         weight: Joi.number().required(),
     });

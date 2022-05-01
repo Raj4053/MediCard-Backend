@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
       "dob",
       "sex",
       "phone",
-      "bloodType",
+      "bloodGroup",
       "height",
       "weight",
     ])
@@ -27,7 +27,7 @@ router.post("/", async (req, res) => {
   await patient.save();
   console.log(patient);
 
-  res.send(_.pick(patient, "name", "_id", "phone", "bloodTye"));
+  res.send(_.pick(patient, "name", "_id", "phone", "bloodGroup"));
 });
 
 router.get("/:id", async (req, res) => {

@@ -15,7 +15,7 @@ router.post("/", async (req, res) => {
   //Find Patient and Update it
   patient = await Patient.findByIdAndUpdate(
     req.body.id,
-    { $set: _.pick(req.body, ["height", "weight", "bmi"]) },
+    { $set: _.pick(req.body, ["height", "weight"]) },
     { new: true }
   );
 
